@@ -45,7 +45,7 @@ public class СalculatorMain {
         return operation;
     }
 
-    public static int calc(int num1, int num2, char operation) {
+    public static int calc(int num1, int num2, char operation){
         int result = 0;
         try {
             switch (operation) {
@@ -59,7 +59,7 @@ public class СalculatorMain {
                     result = num1 * num2;
                     break;
                 case '/':
-                    result = num1 / num2;
+                            result = num1 / num2;
                     break;
                 default:
                     System.out.println("Операция не распознана. Повторите ввод.");
@@ -67,7 +67,7 @@ public class СalculatorMain {
             }
             return result;
 
-        } catch (MyArithmeticException e) {
+        } catch (ArithmeticException e) {
             System.out.println(e);
             System.out.println("На ноль делить нельзя");
         }
