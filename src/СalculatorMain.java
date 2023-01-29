@@ -67,7 +67,7 @@ public class СalculatorMain {
             }
             return result;
 
-        } catch (ArithmeticException e) {
+        } catch (MyArithmeticException e) {
             System.out.println(e);
             System.out.println("На ноль делить нельзя");
         }
