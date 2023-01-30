@@ -67,12 +67,11 @@ public class СalculatorMain {
             }
             return result;
 
-        } catch (ArithmeticException e) {
-            System.out.println(e);
-            System.out.println("На ноль делить нельзя");
+        } catch (ArithmeticException ex) {
+            throw new MyArithmeticException(ex);
+
         }
 
-        return result;
     }
 }
 
